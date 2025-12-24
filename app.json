@@ -2,6 +2,7 @@
   "expo": {
     "name": "travel-log",
     "slug": "travel-log",
+    "scheme": "travel-log",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.travellog"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +23,17 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.travellog"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
